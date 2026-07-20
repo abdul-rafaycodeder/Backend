@@ -3,13 +3,11 @@ import express from "express";
 const app = express();
 
 
-const notes = []
+// const notes = []
 
-app.post("/notes", (req, res)=>{
-
-    res.send("Notes added successfully")
-    
-
+app.get("/data", (req, res) => {
+    res.send("Hello, World!")
 })
+
 
 export default app
